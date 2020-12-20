@@ -1,0 +1,333 @@
+/*
+*{
+  border: 1px solid;
+}
+*/
+/* body {
+    background: url("https://s-media-cache-ak0.pinimg.com/originals/7f/26/10/7f2610e257c2936bf74ccdc0f8215470.jpg") repeat;
+} */
+
+.top_box{
+  height: 3em;
+  background-color: #d4e157;
+  border-radius: 1em;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  position: fixed;
+  z-index: 2;
+  width: 98%;
+}
+
+.user_icon{
+  position: relative;
+  top: 0.3em;
+  left: 0.3em;
+  z-index: 2;
+  color: #2e7d32;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+.username{
+  display: inline-block;
+  position: absolute;
+  left: 2.5em;
+  font-size: 1.3em;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+}
+
+.online{
+  display: inline-block;
+  position: absolute;
+  left: 3.3em;
+  top: 1.55em;
+  font-size: 1em;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+}
+
+.bottom_box{
+  height: 3em;
+  background-color: #eeeeee;
+  border-radius: 1em;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  position: fixed;
+  z-index: 2;
+  width: 98%;
+  bottom: 0.3em;
+}
+
+.bottom_container{
+  position: relative;
+  left: 2.8em;
+  width: 71%;
+  height: 90%;
+  display: block;
+}
+
+.typing_area{
+  position: relative;
+  width : 100%;
+  height: 96%;
+  display: block;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: none;
+  outline: none;
+  background-color: #eeeeee;
+  font-size: 15px;
+  padding-top: 5px;
+}
+
+.type{
+  height: auto;
+  width: auto;
+  display: inline-block;
+  position: relative;
+  font-size: 1em;
+  font-family: 'Quicksand', sans-serif;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+  top: 35%;
+  max-width: 100%;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+.send_button{
+  position: absolute;
+  height: 2.75em;
+  width: 2.75em;
+  background-color: #32cb00;
+  right: 0.2em;
+  display: inline-block;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+#send{
+  position: absolute;
+  bottom: 0.29em;
+  right: 0.25em;
+  color: #ffffff;
+  display: inline-block;
+}
+
+#emoji{
+  position: absolute;
+  bottom: 0.3em;
+  left: 0.3em;
+  color: #000000;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.send_button{
+  padding: 0.125em;
+  cursor: pointer;
+}
+.send_button:hover{
+  transform: scale(1.4);
+}
+
+.send_button:active{
+  transform: scale(1.4);
+}
+
+.center_box{
+  width: 98%;
+  height: 100%;
+  top: 2.8em;
+  margin: auto;
+  padding: 0;
+  z-index: 1;
+  display: block;
+  position: fixed;
+  overflow: hidden;
+}
+
+.container{
+  top: 0.7em;
+  width: 100%;
+  bottom: 6em;
+  margin: auto;
+  z-index: 1;
+  display: block;
+  position: absolute;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-right: 1.5em;
+}
+
+.you, .me{
+  display: none;
+  clear: both;
+  font-size: 1em;
+  padding: 0 0.8em 0.3em 0.8em;
+  box-sizing: border-box;
+  word-break: keep-all;
+  word-wrap: break-word;
+  margin: 0.25em;
+  font-family: 'PT Sans', sans-serif;
+  text-align: justify;
+}
+
+#talkbubble_you {
+   left: 1.875em;
+   max-width: 80%;
+   min-height: 2.5em;
+   background-color: #eeeeee;
+   position: relative;
+   -moz-border-radius:    0em 0.625em 0.625em 0.625em;
+   -webkit-border-radius: 0em 0.625em 0.625em 0.625em;
+   border-radius:         0em 0.625em 0.625em 0.625em;
+}
+
+#talkbubble_you:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 0em;
+   width: 0;
+   height: 0;
+   border-top: 0em solid transparent;
+   border-right: 1.25em solid #eeeeee;
+   border-bottom: 1.25em solid transparent;
+}
+
+.you{
+  float: left;
+}
+
+#talkbox_you {
+   left: 1.875em;
+   min-width: 7.5em;
+   max-width: 80%;
+   min-height: 2.5em;
+   background-color: #eeeeee;
+   position: relative;
+   -moz-border-radius:    0.625em 0.625em 0.625em 0.625em;
+   -webkit-border-radius: 0.625em 0.625em 0.625em 0.625em;
+   border-radius:         0.625em 0.625em 0.625em 0.625em;
+}
+
+#talkbubble_me {
+   right: 1.875em;
+   min-width: 7.5em;
+   max-width: 80%;
+   min-height: 2.5em;
+   background-color: #90cc00;
+   position: relative;
+   -moz-border-radius:    0.625em 0em 0.625em 0.625em;
+   -webkit-border-radius: 0.625em 0em 0.625em 0.625em;
+   border-radius:         0.625em 0em 0.625em 0.625em;
+}
+#talkbubble_me:before {
+   content:"";
+   position: absolute;
+   left: 100%;
+   top: 0em;
+   width: 0;
+   height: 0;
+   border-top: 0em solid transparent;
+   border-left: 1.25em solid #90cc00;
+   border-bottom: 1.25em solid transparent;
+}
+
+.me{
+  float: right;
+}
+
+#talkbox_me {
+   right: 1.875em;
+   min-width: 7.5em;
+   max-width: 80%;
+   min-height: 2.5em;
+   background-color: #90cc00;
+   position: relative;
+   -moz-border-radius:    0.625em 0.625em 0.625em 0.625em;
+   -webkit-border-radius: 0.625em 0.625em 0.625em 0.625em;
+   border-radius:         0.625em 0.625em 0.625em 0.625em;
+}
+
+.time{
+  position: absolute;
+  right: 0.25em;
+  bottom: 0.2em;
+  font-size: 0.8125em;
+  font-family: 'PT Sans', sans-serif;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/*Shadows*/
+.top_box, .bottom_box, .send_button, .you, .me{
+  box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.20) , 0 0.2em 1em rgba(0, 0, 0, 0.19);
+}
+
+@-webkit-keyframes popup{
+  0%{
+    transform: scale(0);
+  }
+  80%{
+    transform: scale(1.05);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+@-moz-keyframes popup{
+  0%{
+    transform: scale(0);
+  }
+  80%{
+    transform: scale(1.05);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+@keyframes popup{
+  0%{
+    transform: scale(0);
+  }
+  80%{
+    transform: scale(1.05);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+/*
+.type{
+  border-right: .15em solid grey;
+  animation: blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+*/
+
+.tooltip{
+    visibility: hidden;
+    width: auto;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 0.75em;
+    border: 0px;
+    padding: 0.3em 0.625em;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transition: opacity 1s;
+}
